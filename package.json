@@ -1,0 +1,11 @@
+{
+  "name": "zavisa-chat-site",
+  "version": "1.0.0",
+  "description": "Zavisa RCM - Chat with Zoe",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

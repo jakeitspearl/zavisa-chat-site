@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoe at Zavisa RCM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background: #ffffff;
+        }
+        flowise-fullchatbot {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <flowise-fullchatbot></flowise-fullchatbot>
+    <script type="module">
+        import Chatbot from 'https://flowisepearlchatembed-production-da6c.up.railway.app/web.js';
+        Chatbot.initFull({
+            chatflowid: 'ZAVISA_RCM',
+            apiHost: 'https://flowisepearlchatembed-production-da6c.up.railway.app',
+            isFullPage: true,
+            theme: {
+                chatWindow: {
+                    showTitle: true,
+                    title: 'Zoe at Zavisa RCM',
+                    titleBackgroundColor: '#0F1F45',
+                    titleTextColor: '#ffffff',
+                    backgroundColor: '#ffffff',
+                    fontSize: 16,
+                    clearChatOnReload: true,
+                    welcomeMessage: 'Hello, I\'m Zoe with Zavisa RCM. How can I assist you today?',
+                    renderHTML: true,
+                    botMessage: {
+                        showAvatar: false,
+                        backgroundColor: '#F2F4F3',
+                        textColor: '#0A0A0A'
+                    },
+                    userMessage: {
+                        showAvatar: false,
+                        backgroundColor: '#0F1F45',
+                        textColor: '#ffffff'
+                    },
+                    textInput: {
+                        backgroundColor: '#ffffff',
+                        textColor: '#0A0A0A',
+                        sendButtonColor: '#258EA6',
+                        placeholder: 'Type your question...',
+                        autoFocus: true
+                    },
+                    footer: {
+                        textColor: '#aaaaaa',
+                        text: '',
+                        company: '',
+                        companyLink: ''
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
